@@ -16,6 +16,16 @@ pipeline {
 		
 		
 		
+			//Code starts for stage PMD
+		stage('PMD') {
+            steps {
+                sh 'mvn site'
+            }
+        }
+		//Code ends for stag
+		
+		
+		
 		// *****ALL CODE TO BE ADDED ABOVE THIS COMMENT*****
     }
 }
